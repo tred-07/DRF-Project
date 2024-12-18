@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ["*",".vercel.app"]
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
+    # 'whitenoise.runserver_nostatic',
     'rest_framework',
     'rest_framework.authtoken',
     'django.contrib.admin',
@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-'crispy_bootstrap5',
-'corsheaders'   ,
+    'crispy_bootstrap5',
+    'corsheaders'   ,
     'advertise',
     'request',
     'review',
