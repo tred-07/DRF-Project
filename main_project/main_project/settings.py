@@ -25,13 +25,8 @@ SECRET_KEY = 'django-insecure--4u&zya5@+=$8!(+b@w%!93yo7!31@eq3^$_tze3p%33njq=5f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
-DEBUG=True
-
 ALLOWED_HOSTS = ["*","127.0.0.1", ".vercel.app"]
 # CSRF_TRUSTED_ORIGINS = ['domainName','https://*.127.0.0.1']
-STATIC_ROOT=BASE_DIR/'staticfiles'
-WSGI_APPLICATION = 'main_project.wsgi.app'
 
 # Application definition
 
@@ -77,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'main_project.wsgi.application'
+WSGI_APPLICATION = 'main_project.wsgi.app'
 
 
 # Database
@@ -126,11 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT=BASE_DIR/'staticfiles'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
